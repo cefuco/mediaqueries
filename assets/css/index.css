@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 490px) and (max-width: 576px) {
+    .nav {
+        display: grid;
+        justify-content:space-around;
+        background-color: blue;
+        height: 50px;
+        width: auto;
+        padding-top: 10px;
+        grid-template-areas: 
+        "a"
+        "p"
+        "div";
+    }
+
+    .a{
+        grid-area: a ;
+        
+    }
+    .p{
+        grid-area: p;
+    }
+    .divSvg{
+        grid-area: div;
+    }
+
+    .nav div svg{
+        margin-left: 125%;
+        margin-top: -10%;
+    }
+    .nav p{
+        margin-left: -10%;
+        margin-top: -5%;
+    }
+    .nav a{
+        margin-left: -30%;
+    }
+    .datos{
+        margin-bottom: 10px;
+    }
+    .main .datos{
+        background-color: rgb(184, 178, 171);
+    }
+    .main .orden{
+        text-align: center;
+        height: 30%;
+    }
+    .main input{
+        margin-left: 35%;
+    }
+    /* .main .img-auto{
+        border: solid 1px rgb(121, 10, 10);
+    } */
+    /* .main .img-auto{
+        text-align: center;
+    } */
+    
+    .img-auto{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-auto .modelo{
+        padding: 40px 0 0 0 ;
+        text-align: center;
+    }
+    .img-auto .btn-verMas{
+        background-color: blue;
+        color: white;
+        width: 15%;
+        margin: 0 0 0 40%;
+        border-radius: 8px;
+        padding: 5px 5px 5px 5px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: blue;
+        height: 50px;
+        width: auto;
+        color: white;
+        padding-top: 10px;
+
+    }
+}
+
